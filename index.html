@@ -1,0 +1,367 @@
+<html>
+	<head>
+		<title>Style Guide | RDG Frontend Exercises</title>
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+	</head>
+
+<body>
+
+<div id="page">
+
+<header id="rdg-header">
+	<ul>
+		<li><a href="index.html" class="active">Sass</a></li>
+		<li><a href="index.html">Tips & Tricks</a></li>
+		<li><a href="jquery.html">jQuery</a></li>
+	</ul>
+</header>
+
+<section id="intro">
+	<h1>Learn Sass</h1>
+	<p class="intro">Sass stands for "Syntactically awesome style sheets." It is an extension of CSS that allows developers to write more flexible CSS by using variables, mixins, conditional statements, and more. Even though it looks nearly identical to CSS, Sass must be compiled into CSS files in order for the browser to understand it.</p>
+</section>
+
+<section id="styleguide" class="exercise">
+	<h2>Exercise 1: Style Guide</h2>
+	<div class="directions">
+		<p>Using the HTML on this page and sass file structure that has already been set up for you, create a sass/css style guide based on the provided mockup. Start by styling the small elements of the page (i.e. typography, links, buttons, etc.) and gradually build up to larger components/regions. Try to utilize sass variables and mixins to help with uniformity and to reduce duplicate code.</p>
+	</div>
+	<div class="resources">
+		<ul>
+			<li><a href="https://sass-lang.com/guide" target="_blank">Learn Sass</a></li>
+			<li><a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank">Sass Documentation</a></li>
+			<li><a href="https://www.codecademy.com/learn/learn-sass" target="_blank">Code Academy Course</a></li>
+			<li><a href="https://www.youtube.com/watch?v=St5B7hnMLjg" target="_blank">The Net Ninja - Video Tutorials</a></li>
+		</ul>
+	</div>
+
+<!-- Start Style Guide Exercise -->
+<header id="header">
+	<div id="header__top">
+		<div class="layout-container">
+			<nav id="menu--secondary">
+				<ul class="menu menu--secondary inline">
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div id="search">
+				<div class="form-item form-item--text">
+					<input type="text" placeholder="Search"/>
+				</div>
+				<div class="form-actions">
+					<input type="submit" value="Submit"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="header__bottom">
+		<div class="layout-container">
+			<a id="logo" href="#"></a>
+			<a id="toggle-menu" href="#">
+				<span class="bar first"></span>
+				<span class="bar middle"></span>
+				<span class="bar last"></span>
+			</a>
+			<nav id="menu--primary">
+				<ul class="menu menu--main inline">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<section id="colors" class="section layout-container">
+	<h2 class="section-title">Colors</h2>
+	<div class="color-swatch background--gold color--white">
+		#FFA800
+	</div>
+	<div class="color-swatch background--blue color--white">
+		#2F82F8
+	</div>
+	<div class="color-swatch background--light-gray border">
+		#F9F9F8
+	</div>
+	<div class="color-swatch background--med-gray">
+		#DBDBDB
+	</div>
+	<div class="color-swatch background--dark-gray color--white">
+		#555555
+	</div>
+	<div class="color-swatch background--black color--white">
+		#222222
+	</div>
+</section>
+
+<section id="typography" class="section layout-container">
+	<h2 class="section-title">Typography</h2>
+	<h1>H1: Lorem ipsum dolor sit amet</h1>
+	<h2>H2: Lorem ipsum dolor sit amet</h2>
+	<h3>H3: Lorem ipsum dolor sit amet</h3>
+	<h4>H4: Lorem ipsum dolor sit amet</h4>
+	<h5>H5: Lorem ipsum dolor sit amet</h5>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<ul>
+		<li>This is an unordered list.</li>
+		<li>It has a few bullet points.</li>
+		<li>Three to be exact.</li>
+	</ul>
+	<ol>
+		<li>This is an ordered list.</li>
+		<li>It has a few numbered points.</li>
+		<li>Three to be exact.</li>
+	</ol>
+	<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
+</section>
+
+<section id="buttons" class="section layout-container">
+	<h2 class="section-title">Buttons</h2>
+	<a href="#" class="button button--primary">Primary Button</a>
+	<a href="#" class="button button--secondary">Secondary Button</a>
+	<a href="#" class="button button--tertiary">Tertiary Button</a>
+	<span class="button-group">
+		<a href="#" class="button button--primary">Call Us</a> <a href="#" class="button button--secondary">Email Us</a>
+	</span>
+</section>
+
+<section id="form-elements" class="section layout-container">
+	<h2 class="section-title">Form elements</h2>
+	<div class="form-item form-item--text">
+		<label>Text Field</label>
+		<input type="text" placeholder="First Name" />
+	</div>
+	<div class="form-item form-item--select">
+		<label>Select</label>
+		<select>
+			<option>-- Select --</option>
+			<option>Option 1</option>
+			<option>Option 2</option>
+			<option>Option 3</option>
+		</select>
+	</div>
+	<fieldset class="form-radios">
+		<legend>Radio Buttons</legend>
+		<div class="form-item form-item--radio"><input type="radio" name="radios" id="radio-opt1" value="radio-opt1" checked /><label for="radio-opt1" class="option">Option 1</label></div>
+		<div class="form-item form-item--radio"><input type="radio" name="radios" id="radio-opt2" value="radio-opt2"/><label for="radio-opt2" class="option">Option 2</label></div>
+		<div class="form-item form-item--radio"><input type="radio" name="radios" id="radio-opt3" value="radio-opt3" disabled="disabled"/><label for="radio-opt3" class="option">Option 3</label></div>
+	</fieldset>
+	<fieldset class="form-checkboxes">
+		<legend>Check Boxes</legend>
+		<div class="form-item form-item--checkbox"><input type="checkbox" name="checkboxes" checked="checked"/><label class="option">Option 1</label></div>
+		<div class="form-item form-item--checkbox"><input type="checkbox" name="checkboxes"/><label class="option">Option 2</label></div>
+		<div class="form-item form-item--checkbox"><input type="checkbox" name="checkboxes" disabled="disabled"/><label class="option">Option 3</label></div>
+	</fieldset>
+	<div class="form-item form-item--textarea">
+		<label>Textarea</label>
+		<textarea placeholder="Textarea"></textarea>
+	</div>
+</section>
+
+<section id="grid" class="section layout-container">
+	<h2 class="section-title">Grid - 6 col</h2>
+	<div class="grid-container">
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--one">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+	</div>
+	<h2 class="section-title">Grid - 3 col</h2>
+	<div class="grid-container">
+		<div class="column column--two">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--two">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--two">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+	</div>
+	<h2 class="section-title">Grid - 2/3 col 1/3 col</h2>
+	<div class="grid-container">
+		<div class="column column--four">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--two">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+	</div>
+	<h2 class="section-title">Grid - 2 col</h2>
+	<div class="grid-container">
+		<div class="column column--three">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+		<div class="column column--three">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+	</div>
+	<h2 class="section-title">Grid - 1 col</h2>
+	<div class="grid-container">
+		<div class="column column--six">
+			<div class="background--light-gray" style="height:50px;"></div>
+		</div>
+	</div>
+</section>
+
+<div id="cards" class="section layout-container">
+	<h2 class="section-title">Cards</h2>
+	<div class="grid-container">
+		<div class="column column--two">
+			<div class="card">
+				<div class="card__content">
+					<h3>Card</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="#" class="button button--primary">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<div class="column column--two">
+			<div class="card">
+				<div class="card__image">
+					<img src="images/card.jpg" alt="Resource image" />
+				</div>
+				<div class="card__content">
+					<h3>Card - Image</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="#" class="button button--primary">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<div class="column column--two">
+    	<div class="card card--dark">
+			<div class="card__content">
+    		<h3>Card - Dark</h3>
+    		<a href="#" class="button button--primary">Call 123.456.7890</a>
+    		<a href="#" class="button button--secondary">Or Start Yours Online</a>
+			</div>
+    	</div>
+		</div>
+	</div>
+</div>
+
+
+<section id="hero--small" class="section">
+	<h2 class="section-title layout-container">Hero</h2>
+	<div class="hero hero--small">
+		<div class="layout-container">
+			<h1>Lorem ipsum dolor sit amet</h1>
+		</div>
+	</div>
+</section>
+
+<section id="hero--tall" class="section">
+	<h2 class="section-title layout-container">Hero with CTA</h2>
+	<div class="hero hero--tall">
+		<div class="layout-container">
+			<div class="grid-container">
+				<div class="column column--four">
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</div>
+				<div class="column column--two">
+					<div class="card card--dark">
+						<div class="card__content">
+							<h3>Contact Us Today</h3>
+							<a href="#" class="button button--primary">Call Us</a>
+							<a href="#" class="button button--secondary">Email Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="cta-band" class="section">
+	<h2 class="section-title layout-container">CTA Band</h2>
+	<div class="cta">
+		<div class="layout-container">
+			<h3 class="cta-text">Contact Us Today</h3>
+			<span class="button-group">
+				<a href="#" class="button button--primary">Call Us</a><a href="#" class="button button--secondary">Email Us</a>
+			</span>
+		</div>
+	</div>
+</section>
+
+<section id="footer-section" class="section">
+	<h2 class="section-title layout-container">Footer</h2>
+	<footer id="footer">
+		<div id="footer__top" class="layout-container">
+			<div class="grid-container">
+				<div class="column column--two footer__contact">
+					<h4>Have a question? We're here to help.</h4>
+					<ul class="menu">
+						<li>Call Customer Service: <a href="#" class="tel-link">800.345.1070</a></li> 
+						<li>Call to Find a Location: <a href="#" class="tel-link">800.345.1070</a></li>
+					</ul>
+					<p><a href="#" class="button button--primary">Contact Us</a></p>
+				</div>
+				<div class="column column--two footer__discover-more">
+					<h4>Discover More</h4>
+					<ul class="menu columns columns--two">
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Merchandise</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Franchising</a></li>
+						<li><a href="#">Media Kit</a></li>
+						<li><a href="#">Accolades</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="column column--two footer__social">
+					<h4>Connect With Us</h4>
+					<ul class="social-links inline">
+						<li><a href="#" class="icon--social"><i class="fa fa-facebook"></i><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-twitter"></i><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-google-plus"></i><span class="label">Google Plus</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-pinterest"></i><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-youtube"></i><span class="label">YouTube</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-linkedin"></i><span class="label">Linkedin</span></a></li>
+						<li><a href="#" class="icon--social"><i class="fa fa-instagram"></i><span class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer__bottom">
+			<div class="layout-container">
+				<p>Copyright 2017 Rapid Development Group. <a href="#">Privacy Policy</a></p>
+			</div>
+		</div>
+	</footer>
+</section>
+
+</section>
+
+</div>
+
+</body>
+</html>
