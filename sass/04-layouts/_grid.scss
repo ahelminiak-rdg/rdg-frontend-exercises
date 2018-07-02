@@ -1,0 +1,42 @@
+.grid-container:after{
+  content:"";
+  display:table;
+  clear:both;
+  max-width:1200px;
+  }
+.column--12{
+  padding:10px;
+}
+.column--6{
+    float:left;
+    width:50%;
+    padding:10px;
+  }
+.column--4{
+  float:left;
+  width:33.333%;
+  padding:10px;
+}
+.column--3{
+  float:left;
+  width:25%;
+  padding:10px;
+}
+
+.column--12 .background--light-gray{
+  padding:3%;
+}
+.column--6 .background--light-gray{
+  padding:8%;
+}
+.column--4 .background--light-gray{
+  padding:16%;
+}
+.column--3 .background--light-gray{
+  padding:24%;
+}
+
+#grid h2{
+  display:none;
+}
+
