@@ -40,3 +40,26 @@
   display:none;
 }
 
+#grid .background--light-gray{
+  background-color:$medium-dark-gray;
+}
+
+
+
+
+@media only screen and (max-width:40em) {
+
+.column--6{
+    width:100%;
+  }
+.column--4{
+  width:100%;
+
+}
+.column--3{
+  width:100%;
+}
+
+
+
+}

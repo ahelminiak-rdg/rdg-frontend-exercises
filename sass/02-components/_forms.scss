@@ -1,12 +1,96 @@
 
-input[type="checkbox"]:focus{
-   color:red;
+input[type="text"] {
+    @extend %text;
+    &:focus{
+        border-color:$primary;
+        outline: 0 none;
+        border-style:solid;
+        opacity:.8;
+    }
+    &::placeholder{
+        @extend %placeholder;
+    }
+ } 
+
+ label{
+     text-transform:uppercase;
+ }
+
+textarea{
+    @extend %text;
+    border:.3px solid $medium-dark-gray;
+    height:100px;
+    &::placeholder{
+        @extend %placeholder;
+        padding-top:5px;
+    }
 }
 
-input[type="text"]:focus{
-    border:green;
-    background-color:green;
+select{
+    color:$medium-dark-gray;
+    border-radius:0px;
+    width:400px;
+    height:60px;
+    border:.3px solid $medium-dark-gray;
+    padding-left:10px;
+    font-size:1rem;
+    overflow: visible;
+    background-color:$light-gray;
+    display:block;
+    -webkit-appearance:none;
+}
+
+.form-item--select{
+    padding-top:20px;
+}
+
+select:focus{
+    border-color:$primary;
+    outline: 0 none;
+    border-style:solid;
+    opacity:.8;
+    border:2px solid $primary;
+}
+
+
+fieldset{
+    border:none;
+}
+
+
+.form-radios legend {
+    padding-top:20px;
+}
+
+.form-checkboxes legend {
+    padding-top:20px;
+}
+
+.form-item--textarea{
+    padding-top:20px;
+}
+
+
+input[type="checkbox"]{
+    @extend %check;
+   }
+
+
+input[type="radio"]{
+    @extend %check;
+    border-radius:50%;
  }
  
- 
- 
+ .form-radios legend{
+    text-transform:uppercase;
+ }
+ .form-radios .form-item--radio label{
+    text-transform:capitalize;
+ }
+ .form-checkboxes .form-item--checkbox label{
+    text-transform:capitalize;
+ }
+
+ .form-checkboxes legend{
+    text-transform:uppercase;
+ }
