@@ -1,3 +1,5 @@
+
+
 .layout-container{
     max-width:1200px;
     margin-left:auto;
@@ -12,28 +14,31 @@
     color:white;
 }
 
-.background--gold{
+.background--green{
     background-color: $primary;
 }
 
-.background--blue{
+.background--purple{
     background-color: $secondary;
 }
-.background--light-gray{
+.background--plum{
     background-color: $secondary-dark;
 }
-.background--med-gray{
+.background--dark-gray{
     background-color: $dark-gray;
 }
-.background--dark-gray{
+.background--med-gray{
     background-color: $medium-dark-gray;
 }
-.background--black{
+.background--light-gray{
     background-color: $medium-light-gray;
     color:black;
 }
-.background--light-gray{
-    background-color:$medium-dark-gray;
+
+.background--xlight-gray{
+    background-color:$light-gray;
+    color:black;
+    border:1px solid $medium-dark-gray;
 
 }
 
