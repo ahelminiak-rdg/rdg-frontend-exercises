@@ -87,8 +87,14 @@ input[type="radio"]{
  .form-radios .form-item--radio label{
     text-transform:capitalize;
  }
- .form-checkboxes .form-item--checkbox label{
-    text-transform:capitalize;
+ .form-checkboxes .form-item--checkbox {
+    label{
+        text-transform:capitalize
+    }
+    input:checked + label:before {
+        content:"\f00c";
+        font-family: $icon;
+    }
  }
 
  .form-checkboxes legend{
