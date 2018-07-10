@@ -38,6 +38,11 @@ select{
     background-color:$light-gray;
     display:block;
     -webkit-appearance:none;
+    background-image: url(../images/select-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    background-size: 6%;
 }
 
 .form-item--select{
@@ -89,13 +94,44 @@ input[type="radio"]{
  }
  .form-checkboxes .form-item--checkbox {
     label{
-        text-transform:capitalize
+        text-transform:capitalize;
+        position:relative;
+        bottom:3.5px;
     }
     input:checked + label:before {
         content:"\f00c";
         font-family: $icon;
+        margin-left:-16px;
+        padding-right:4px;
+        font-size:.8rem;
+        color:white;
+
     }
  }
+
+ .form-radios .form-item--radio {
+    label{
+        text-transform:capitalize;
+        position:relative;
+        bottom:6px;
+
+    }
+    input:checked + label:before {
+        content:"\25CF";
+        font-family: $icon;
+        margin-left:-16px;
+        padding-right:5.5px;
+        font-size:.8rem;
+        padding-left:2.5px;
+        color:white;
+
+    }
+ }
+
+
+
+
+
 
  .form-checkboxes legend{
     text-transform:uppercase;

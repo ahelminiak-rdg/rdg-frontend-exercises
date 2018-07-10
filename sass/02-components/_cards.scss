@@ -1,43 +1,99 @@
-#cards:after{
-    content:"";
-    display:table;
-    clear:both;
-   }
-   
-.card{
-    float:left;
-    width:33.33333%;
-    padding:10px;
-   }
-.card__image img{
-    width:100%;
+
+#styleguide{
+
+    #cards:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+    
+    .card{
+        float:left;
+        width:33.33333%;
+        padding:10px;
+    }
+    .card__image img{
+        width:100%;
+    }
+
+    .card__content{
+        background-color:$medium-light-gray;
+        padding-bottom:40px;
+        padding-right:10px;
+        padding-left:30px;
+        padding-top:20px;
+    
+    }
+
+    #cards h3{
+        text-transform:uppercase;
+    }
+
+    #cards p{
+        padding-bottom:30px;
+        width:19vw;
+    }
+
+
+    #cards .button--primary{
+    padding-left:7vw;
+    padding-right:7vw;
+    }
+
+    .card--dark .card__content{
+        background-color:$dark-gray;
+        color:white;
+    }
 }
 
-.card__content{
-    background-color:$medium-light-gray;
-    padding-bottom:40px;
-    padding-right:10px;
-    padding-left:30px;
-    padding-top:20px;
- 
-}
 
-#cards h3{
-    text-transform:uppercase;
-}
+.example{
+    display:flex;
+    flex-wrap:wrap;
+    .card{
+        width:33%;
+        padding:20px;
+        padding-bottom:40px;
+        background-color:$medium-light-gray;
+        margin:2px;
+        a{
+            color:white;
+            background-color:$primary;
+            border:2px solid $primary;
+            padding-left:40px;
+            padding-right:40px;
+            padding-top:5px;
+            padding-bottom:5px;
+            text-decoration:none;
+            -webkit-transition:.5s;
+            font-size:.9rem;
+            &:hover{
+                    border:2px solid $primary;
+                    color:$primary;
+                    background-color:white;
+            }
+        }
+      }
+  }
 
-#cards p{
-    padding-bottom:30px;
-    width:19vw;
-}
 
 
-#cards .button--primary{
-  padding-left:7vw;
-  padding-right:7vw;
-}
+@media only screen and (max-width:40em) {
 
-.card--dark .card__content{
-    background-color:$dark-gray;
-    color:white;
+    .example{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        .card{
+            width:100%;
+            padding:10px;
+            background-color:$medium-light-gray;
+            margin:2px;
+          }
+        .card__content{
+            padding-bottom:20px;
+        }
+      }
+    
+    
 }

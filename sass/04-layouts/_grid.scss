@@ -12,12 +12,12 @@
     width:50%;
     padding:10px;
   }
-.column--4{
+.column--3{
   float:left;
   width:33.333%;
   padding:10px;
 }
-.column--3{
+.column--4{
   float:left;
   width:25%;
   padding:10px;
@@ -29,10 +29,10 @@
 .column--6 .background--light-gray{
   padding:8%;
 }
-.column--4 .background--light-gray{
+.column--3 .background--light-gray{
   padding:16%;
 }
-.column--3 .background--light-gray{
+.column--4 .background--light-gray{
   padding:24%;
 }
 
@@ -43,6 +43,40 @@
 #grid .background--light-gray{
   background-color:$medium-dark-gray;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -63,3 +97,5 @@
 
 
 }
+
+
