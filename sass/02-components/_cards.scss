@@ -50,12 +50,43 @@
 .example{
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
+    margin-left:20px;
+    margin-right:20px;
+    ul{
+        column-count: 2;
+    }
     .card{
-        width:33%;
-        padding:20px;
+        width:calc(33.3333% - 20px);
         padding-bottom:40px;
         background-color:$medium-light-gray;
-        margin:2px;
+        margin-top:30px;
+        position:relative;
+        z-index:1;
+        h3,p,{
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .card__content{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:flex-start;
+        }
+        img{
+            object-fit:cover;
+            height:400px;
+            width:100%;
+            object-position: 20% 0%;
+        }
+        span{
+            background-color:$dark-gray;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            position:absolute;
+            left:450px;
+            top:630px;
+        }
         a{
             color:white;
             background-color:$primary;
@@ -67,6 +98,8 @@
             text-decoration:none;
             -webkit-transition:.5s;
             font-size:.9rem;
+            margin-left:20px;
+            align-self:flex-end;
             &:hover{
                     border:2px solid $primary;
                     color:$primary;
@@ -76,24 +109,104 @@
       }
   }
 
+#position{
+    margin-bottom:200px;
+}
+
+#rdg-header ul{
+    position:fixed;
+    background-color: #222;
+    width:100vw;
+    z-index:1;
+    opacity:4;
+}
+
+#rdg-header{
+    position:fixed;
+    z-index:100;
+}
+
+#intro h1{
+    padding-top:60px;
+}
+
+#calculated .example{
+    content:"";
+    display:table;
+    clear:both;
+    div{
+        float:left;
+    }
+    div:nth-child(1){
+        width:calc(100% - 700px);
+        padding:10px;
+    }
+    img{
+        width:700px;
+    }
+    
+}
+
+#flexbox, #object-fit, #css-columns, #calculated, #position{
+    max-width:1600px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:40em) {
 
-    .example{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        .card{
-            width:100%;
-            padding:10px;
-            background-color:$medium-light-gray;
-            margin:2px;
-          }
-        .card__content{
-            padding-bottom:20px;
+.example{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    .card{
+        width:100%;
+        padding:10px;
+        background-color:$medium-light-gray;
+        margin:2px;
         }
-      }
-    
-    
+    .card__content{
+        padding-bottom:20px;
+    }
+    ul{
+        column-count: 1;
+    }
+}
+
+    #calculated .example{
+        content:"";
+        display:table;
+        clear:both;
+        div{
+            float:left;
+        }
+        div:nth-child(1){
+            width:90vw;
+            padding:10px;
+        }
+        img{
+            width:90vw;
+        }
+    }
+
+
+
+
 }
