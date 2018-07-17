@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Style Guide | RDG Frontend Exercises</title>
+		<title>jQuery | RDG Frontend Exercises</title>
 		<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,18 +28,140 @@
 	<p class="intro">Intro to JQuery page here.</p>
 </section>
 
+<section id="this" class="exercise">
+  <h2>Exercise 1: This</h2>
+  <div class="directions">
+		<p>jQuery's "This" is selector refers to the current selected object in a loop or event. It allows you to select only one element in a function, even if there are other matching elements. (For example, clicking on an accordion element to expand only the one you clicked on, rather than all accordions on the page). In this exercise, you will write a simple jQuery function that only logs the text inside of the link that you click on.</p>
+  </div>
+
+  <div class="resources">
+    <ul>
+      <li>
+				<a href="http://html-tuts.com/jquery-this-selector/" target="_blank">HTML Tuts: This Selector</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="example">
+		<ul>
+			<li><a class="exercise-1-link">One</a></li>
+			<li><a class="exercise-1-link">Two</a></li>
+			<li><a class="exercise-1-link">Three</a></li>
+			<li><a class="exercise-1-link">Four</a></li>
+			<li><a class="exercise-1-link">Five</a></li>
+	</div>
+</section>
+
 <section id="add-remove-toggle" class="exercise">
-	<h2>Exercise 1: Add, Remove, and Toggle Classes</h2>
+	<h2>Exercise 2: Add, Remove, and Toggle Classes</h2>
 	<div class="directions">
-		<p>Explanation here.</p>
+		<p>Toggling CSS classes is an easy way to control your site behaviors without writing a lot of jQuery code. Looking at the FAQs below, you'll notice that they have a class "collapsed," which hides the FAQ's answer. Write a simple jQuery function, using only "toggleClass" and "this" from above, to toggle between "collapsed" and "expanded" classes to show/hide the FAQ answer when clicking the FAQ Question. (HINT: you will have to write CSS rules for .collapsed and .expanded to show the desired functionality)</p>
 	</div>
 	<div class="resources">
 		<ul>
-			<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+			<li>
+    		<a href="http://api.jquery.com/toggleclass/" target="_blank">jQuery API: toggleClass</a>
+			</li>
 		</ul>
   </div>
   <div class="example">
+		<div class="accordion collapsed">
+			<h3><a class="accordion__toggle" href="#">Q: Lorem ipsum dolor sit amet?</a></h3>
+			<div class="accordion__content">
+				<p>A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="accordion collapsed">
+    	<h3>
+        <a class="accordion__toggle" href="#">Q: Lorem ipsum dolor sit amet?</a>
+    	</h3>
+    	<div class="accordion__content">
+        <p>A: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	</div>
+		</div>
   </div>
+</section>
+
+<section id="if-else" class="exercise">
+	<h2>Exercise 3: If/Else Statements</h2>
+	<div class="directions">
+		<p>If/else statements (or conditional statements) are a way for you to perform different actions based on different conditions. If a condition is true (an element has a class, an element exists on the page, etc.), then perform one action, otherwise perform a different action. In the exercise below, write a function that checks if any of the elements have the class "highlighted" when clicking the button. If they do, log "TRUE" in the console and remove the highlighted class. If the highlighted class does not exist, then log "FALSE" in the console (HINT: you should have 2 FALSE and 1 TRUE logged in your console)</p>
+	</div>
+
+	<div class="resources">
+		<ul>
+			<li>
+				<a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank">W3Schools</a>
+			</li>
+			<li>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">MDN</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="example">
+		<a class="button button--primary" href="#">Check for Highlighted Class</a>
+		<div class="grid-container">
+			<div class="column column--two">
+				<div class="card check-class">
+					<div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+				</div>
+			</div>
+			<div class="column column--two">
+				<div class="card check-class highlighted">
+					<div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+				</div>
+			</div>
+			<div class="column column--two">
+				<div class="card check-class">
+					<div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sliders" class="exercise">
+  <h2>Exercise 4: Sliders</h2>
+  <div class="directions">
+    <p>There are a ton of jQuery slider plugins out there for you to use. Our favorite is Slick because it's responsive, fairly lightweight, and provides a lot of customizable options. For this exercise, implement the Slick slider plugin to turn the HTML list below into a functioning slider (be sure to read Slick's documentation below, as it will tell you exactly how to use it). Feel free to play around with the different options to make your slider unique! (EXTRA CREDIT: Make your slider responsive by showing a different number of slides for different screen widths!)</p>
+  </div>
+
+  <div class="resources">
+    <ul>
+      <li>
+				<a href="http://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="example">
+		<div class="slider">
+			<img class="slide" src="images/slide-1.jpg" />
+			<img class="slide" src="images/slide-2.jpg"/>
+			<img class="slide" src="images/slide-3.jpg"/>
+			<img class="slide" src="images/slide-4.jpg"/>
+			<img class="slide" src="images/slide-5.jpg"/>
+			<img class="slide" src="images/slide-6.jpg"/>
+		</div>
+	</div>
+</section>
+
+<section id="scroll" class="exercise">
+  <h2>Exercise 5: Scroll Functions</h2>
+  <div class="directions">
+    <p></p>
+  </div>
+
+  <div class="resources">
+    <ul>
+      <li>
+        <a href="http://api.jquery.com/toggleclass/" target="_blank">jQuery API: toggleClass</a>
+      </li>
+    </ul>
+  </div>
+
+    <div class="example"></div>
 </section>
 
 </div>
