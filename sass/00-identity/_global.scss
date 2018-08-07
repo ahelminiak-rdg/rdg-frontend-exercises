@@ -50,3 +50,24 @@
 *{
     box-sizing:border-box;
 }
+
+
+
+.collapsed{
+
+    p{
+        display:none;
+        }
+        ul{
+            column-count: 1;
+        }
+            a{
+                display:block;
+                width:1000px;
+            }
+}
+
+
+.expanded p{
+    display:block;
+}
