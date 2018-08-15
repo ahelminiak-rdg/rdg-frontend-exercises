@@ -18,3 +18,58 @@
              color:$secondary;
        }
 }
+
+
+#accessibility {
+    .card{
+        a{
+        background-color:#0b705b;
+        border:2px solid #0b705b;
+        &:hover{
+                border:2px solid #0b705b;
+                color:#0b705b;
+                background-color:white;
+        }
+        &:focus{
+            border:2px solid $primary;
+            color:#0b705b;
+            background-color:white;
+        }
+        }
+    }
+    }
+
+
+
+.click-me{
+    margin-bottom:30px;
+    margin-top:20px;
+    -webkit-appearance:none;
+    background-color:$secondary;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    -webkit-transition:.5s;
+    color:white;
+    font-size:$head5;
+    font-size:.8rem;
+    &:hover{
+        padding-right:60px;
+        padding-left:60px;
+        background-color:$dark-gray;
+        border-left:5px solid $medium-dark-gray;
+    }
+    &:focus{
+        padding-right:60px;
+        background-color:$dark-gray;
+        border-left:5px solid $medium-dark-gray;
+    }
+}
+
+.first{
+    padding-left:53px;
+    padding-right:53px;
+}
+
+
