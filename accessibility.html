@@ -1,6 +1,6 @@
-<html>
+<html lang="en" dir="ltr">
 	<head>
-		<title>Style Guide | RDG Frontend Exercises</title>
+		<title>Accessibility | RDG Frontend Exercises</title>
 		<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,78 +10,249 @@
 		<script src="js/scripts.js"></script>
 	</head>
 
-    <body>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-629 node-type-landing-page-2 section-capabilities" >
 
-        <div id="page">
+    <div id="page">
+      <header class="header" role="banner">
+        <nav id="rdg-header">
+          <ul>
+            <li><a href="index.html" class="active">Sass</a></li>
+            <li><a href="styling.html">Tips & Tricks</a></li>
+            <li><a href="jquery.html">jQuery</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+          </ul>
+        </nav>
+        <div class="layout-container">
+          <a href="#" title="Home" rel="home" class="logo"><img src="images/lorem-ipsum-logo.svg" alt="Home" /></a>
+          <div class="name-and-slogan element-invisible" id="name-and-slogan">
+              <h1 class="site-name" id="site-name">
+                  <a href="#" title="Home" class="header__site-link" rel="home"><span>Cloud bread</span></a>
+              </h1>
 
-            <header id="rdg-header">
-                <ul>
-                    <li>
-                        <a href="index.html">Sass</a>
-                    </li>
-                    <li>
-                        <a href="styling.html">Tips & Tricks</a>
-                    </li>
-                    <li>
-                        <a href="jquery.html">jQuery</a>
-                    </li>
-                    <li>
-                        <a href="accessibility.html" class="active">Accessibility</a>
-                    </li>
-                </ul>
-            </header>
+              <div class="site-slogan" id="site-slogan">Fashion axe vegan.</div>
+          </div>
 
-            <section id="intro">
-                <h1>Accessibility</h1>
-                <p class="intro">Web accessibility is often overlooked but vital to a well designed site. There are different ways that people with disabilities need to interact with sites, whether it be high enough contrast between text and images or needing to key through the site without a mouse or have a screen reader digest and read the content to them. The bread and butter of accessibility that cover the gamut of accessibility issues is HTML and styling. Edit the HTML of the page below for proper semantics, then style for accessibility, thinking about things like color contrast and state change affects.</p>
-                <div class="resources">
-                    <ul>
-                        <li>
-                            <a href="https://rapiddevelopmentgroup.bitbucket.io/accessibility/index.html" target="_blank">RDG Accessibility Demo</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mediacurrent.com/blog/accessibility-updates-wcag-21/" target="_blank">Accessibility Updates: WCAG 2.1</a>
-                        </li>
+          <a href="#navigation" class="js-menutoggle menutoggle__open"><i class="icon-bars"></i>Menu</a>
+
+            <div id="navigation" class="navigation">
+              <a href="#main-wrapper" class="js-menutoggle menutoggle__close"><i class="icon-close"></i>Close</a>
+
+                <div class="region region-navigation">
+                    <nav id="block-menu-block-1" class="block block-menu-block first last odd main-menu block__menu-block-1"  role="navigation">
+                        <ul class="menu">
+                            <li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-1044"><a href="#" class="menu__link">About Cloud Bread</a></li>
+                            <li class="menu__item is-leaf is-parent is-active-trail leaf has-children active-trail menu-mlid-1045"><a href="#" class="menu__link is-active-trail active-trail">Recipes</a></li>
+                            <li class="menu__item is-leaf leaf menu-mlid-709"><a href="#" class="menu__link">Locations</a></li>
+                            <li class="menu__item is-leaf is-parent leaf has-children menu-mlid-1046"><a href="#" class="menu__link">Careers</a></li>
+                            <li class="menu__item is-leaf is-parent leaf has-children menu-mlid-711"><a href="#" class="menu__link">Menus</a></li>
+                            <li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-950"><a href="#" class="menu__link">Media</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="block-search-form" class="block block-search first last odd block__search-form" role="search">
+                    <div class="block-content">
+                        <form action="/capabilities/roof-systems" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+                            <h2 class="element-invisible">Search form</h2>
+                            <div class="form-item form-type-textfield form-item-search-block-form">
+                                <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                                <input title="Enter the terms you wish to search for" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                            </div>
+                            <div class="form-actions form-wrapper" id="edit-actions">
+                                <button type="submit" id="edit-submit" name="op" value="&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;" class="form-submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /#navigation -->
+        </div>
+    </header><!-- /#header -->
+
+    <div id="main-wrapper">
+        <section class="pageheader">
+            <div id="slide-1" class="pageheader-content">
+                <img src="https://picsum.photos/id/431/1440/760" alt="cliche waistcoat brunch" />
+                <h3 class="pageheader-slogan">Quinoa hashtag</h3>
+                <a class="button--orange" href="#">Watch the video</a>
+            </div>
+            <div id="slide-2" class="pageheader-content">
+                <h3 class="pageheader-slogan">Kale chips</h3>
+                <a class="button--orange" href="#">Learn More</a>
+            </div>
+            <div id="slide-3" class="pageheader-content">
+                <h3 class="pageheader-slogan">Kombucha selfies</h3>
+                <a class="button--orange" href="#">Learn More</a>
+            </div>
+        </section>
+
+        <div id="main" class="main layout-container">
+            <div id="content" class="column" role="main">
+                <section class="wayfinding">
+                    <nav class="breadcrumb" role="navigation">
+                        <h2 class="element-invisible">You are here</h2>
+                        <ol>
+                            <li><a href="/">Recipe</a> |</li>
+                            <li><a href="#">Ingredients</a> |</li>
+                            <li>Directions</li>
+                        </ol>
+                    </nav>
+                    <div class="page-cta">
+                        <div class="field field-related-contact-form">
+                            <div class="field-items">
+                                <div class="field-item even">
+                                    <a href="#">Inquire about our capabilities</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <a id="main-content"></a>
+                <h1 class="page__title">Cloud Bread Original Recipe</h1>
+                <article class="node-629 node node-landing-page-2 view-mode-full clearfix">
+                    <div class="field field__body"><div class="field-items"><div class="field-item even">
+                     <p>- Preheat the oven to 300 degrees F. If you have a convection oven, set on convect. Line two large baking sheets with parchment paper.</p>
+                      <p>- Separate the egg whites and egg yolks. Place the whites in a stand mixer with a whip attachment. Add the cream of tartar and beat on high until the froth turns into firm meringue peaks. Move to a separate bowl.</p>
+                      <p>- Place the cream cheese in the empty stand mixing bowl. Beat on high to soften. Then add the egg yolks one at a time to incorporate. Scrape the bowl and beat until the mixture is completely smooth. Then beat in the Italian seasoning, salt, and garlic powder.</p>
+                      <p>- Gently fold the firm meringue into the yolk mixture. Try to deflate the meringue as little as possible, so the mixture is still firm and foamy.</p>
+                      <p>- Spoon 1/4 cup portions of the foam onto the baking sheets and spread into even 4-inch circles, 3/4 inch high. Make sure to leave space around each circle.</p>
+                      <p>- Bake on convect for 15-18 minutes, or in a conventional oven for up to 30 minutes. The bread should be golden on the outside and firm. The center should not jiggle when shaken.</p>
+                      <p>-Cool for several minutes on the baking sheets, then move and serve!</p>
+                    </div>
+                </article>
+                <div id="block-views-landing-pages-block" class="block block-views last even block__views-landing-pages-block">
+                    <div class="block-content">
+                        <div class="view view-landing-pages view-id-landing_pages view-display-id-block view-dom-id-bed3cb3115db9b44758397b4d0ff2e61">
+                            <ul class="cards cards__count-odd">
+                                <li class="card ">
+                                    <article class="node-632 node node-capability node-teaser clearfix">
+                                        <a class="card__link" href="#">
+                                            <div class="card__image">
+                                                <div class="field field-capability-image">
+                                                    <div class="field-items">
+                                                        <div class="field-item even">
+                                                            <img src="https://picsum.photos/id/30/736/364" width="736" height="364" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body">
+                                                <h2 class="card__title">Coffee Pairings</h2>
+                                                <div class="card__text">
+                                                    <div class="field field-capability-body">
+                                                        <div class="field-items">
+                                                            <div class="field-item even">Hexagon chillwave tousled edison bulb craft beer waistcoat. La croix cloud bread kinfolk marfa, VHS hoodie waistcoat. Microdosing disrupt fit kogi, fixie cliche celiac. Fam single-origin coffee wayfarers gochujang microdosing.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li class="card ">
+                                    <article class="node-630 node node-capability node-teaser clearfix">
+                                        <a class="card__link" href="#">
+                                            <div class="card__image">
+                                                <div class="field field-capability-image">
+                                                    <div class="field-items">
+                                                        <div class="field-item even">
+                                                            <img src="https://picsum.photos/id/312/736/364" width="736" height="364" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body">
+                                                <h2 class="card__title">Dipping Sauces</h2>
+                                                <div class="card__text">
+                                                    <div class="field field-capability-body">
+                                                        <div class="field-items">
+                                                            <div class="field-item even">Humblebrag la croix health goth knausgaard, kinfolk vice viral poutine. IPhone humblebrag DSA shabby chic chicharrones typewriter schlitz, quinoa organic banh mi vape migas leggings.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li class="card ">
+                                    <article class="node-631 node node-capability node-teaser clearfix">
+                                        <a class="card__link" href="#">
+                                            <div class="card__image">
+                                                <div class="field field-capability-image">
+                                                    <div class="field-items">
+                                                        <div class="field-item even">
+                                                            <img src="https://picsum.photos/id/429/736/364" width="736" height="364" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body">
+                                                <h2 class="card__title">Farm Fresh Ingredients</h2>
+                                                <div class="card__text">
+                                                    <div class="field field-capability-body">
+                                                        <div class="field-items">
+                                                            <div class="field-item even">Shaman four loko succulents plaid mlkshk brunch pabst tbh. Cliche chia messenger bag man bun. Lo-fi yuccie unicorn, echo park glossier twee lumbersexual selvage JOMO paleo VHS chia fam. Bodega boys beard hammock pug jean shorts.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#content -->
+
+        </div><!-- /#main -->
+
+    </div><!-- /#main-wrapper -->
+
+    <footer class="footer">
+        <div class="region region-footer layout-container">
+            <div id="block-block-6" class="block block-block first odd block__6">
+                <div class="block-content">
+                    <p>
+                      <a href="#"><img src="images/lorem-ipsum-logo-footer.svg" /></a>
+                    </p>
+                </div>
+            </div>
+            <nav id="block-menu-block-3" class="block block-menu-block even block__menu-block-3"  role="navigation">
+                <div class="menu-block-wrapper menu-block-3 menu-name-main-menu parent-mlid-0 menu-level-1">
+                    <ul class="menu"><li class="menu__item is-leaf is-parent first leaf has-children menu-mlid-1044"><a href="#" class="menu__link">About Cloud Bread</a></li>
+                        <li class="menu__item is-leaf is-parent is-active-trail leaf has-children active-trail menu-mlid-1045"><a href="#" class="menu__link is-active-trail is-active-trail active-trail active-trail">Recipes</a></li>
+                        <li class="menu__item is-leaf leaf menu-mlid-709"><a href="#" class="menu__link">Locations</a></li>
+                        <li class="menu__item is-leaf is-parent leaf has-children menu-mlid-1046"><a href="#" class="menu__link">Careers</a></li>
+                        <li class="menu__item is-leaf is-parent leaf has-children menu-mlid-711"><a href="#" class="menu__link">Menu</a></li>
+                        <li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-950"><a href="#" class="menu__link">Media</a></li>
                     </ul>
                 </div>
-            </section>
-
-            <section id="accessibility" class="exercise">
-                <div>Page Title</div>
-                <div>Raw denim literally tilde offal austin kinfolk. Four dollar toast shabby chic hella marfa tilde palo santo hoodie. Af try-hard you probably haven't heard of them tofu shaman four loko adaptogen poutine asymmetrical. Green juice poke tbh hexagon etsy paleo vegan umami occupy fanny pack subway tile live-edge. Chambray organic authentic franzen gastropub man bun tilde glossier intelligentsia blog distillery.</div>
-                <button>Click Me!</button>
-                <div>
-                    <p>- bullet one</p>
-                    <p>- bullet two</p>
-                    <p>- bullet three</p>
+            </nav>
+            <div id="block-block-5" class="block block-block last odd social-links block__5">
+                <div class="block-content">
+                    <ul class="social">
+                        <li class="youtube"><a href="#" target="_blank"><img src="images/youtube.svg" alt="Subscribe to our YouTube channel" /></a></li>
+                        <li class="twitter"><a href="#" target="_blank"><img src="images/twitter.svg" alt="Follow us on Twitter" /></a></li>
+                        <li class="facebook"><a href="#" target="_blank"><img src="images/facebook.svg" alt="Connect with us on Facebook" /></a></li>
+                    </ul>
                 </div>
-                <div class="card-set">
-                    <div class="card">
-                        <div class="card__content">
-                            <div>Card One Title</div>
-                            <div>Goth flannel pork belly whatever disrupt succulents echo park vinyl shabby chic af cred blue bottle austin. Bespoke brooklyn kombucha copper mug, humblebrag DIY unicorn williamsburg flannel squid four dollar toast iceland echo park lomo kinfolk.</div>
-                            <a href="#">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <div>Card Two Title</div>
-                            <div>Goth flannel pork belly whatever disrupt succulents echo park vinyl shabby chic af cred blue bottle austin. Bespoke brooklyn kombucha copper mug, humblebrag DIY unicorn williamsburg flannel squid four dollar toast iceland echo park lomo kinfolk.</div>
-                            <a href="#">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <div>Card Three Title</div>
-                            <div>Goth flannel pork belly whatever disrupt succulents echo park vinyl shabby chic af cred blue bottle austin. Bespoke brooklyn kombucha copper mug, humblebrag DIY unicorn williamsburg flannel squid four dollar toast iceland echo park lomo kinfolk.</div>
-                            <a href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <button>Click Me, Too!</button>
-            </section>
-
+            </div>
         </div>
-
-    </body>
+        <div class="region region-footer-bottom">
+            <div class="region-inner layout-container">
+                <nav id="block-menu-menu-footer-menu" class="block block-menu first last odd footer-menu block__menu-menu-footer-menu"  role="navigation">
+                    <div class="copyright">&copy; 2023 Cloud Bread</div>
+                    <ul class="menu">
+                        <li class="menu__item is-leaf first leaf"><a href="#" title="" class="menu__link">Contact Us</a></li>
+                        <li class="menu__item is-leaf leaf"><a href="#" class="menu__link">Privacy Policy</a></li>
+                        <li class="menu__item is-leaf leaf"><a href="#" class="menu__link">Site Map</a></li>
+                        <li class="menu__item is-leaf last leaf"><a href="#" title="" class="menu__link">Terms of Use</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </footer>
+    </div><!-- /#page -->
+  </body>
 </html>
