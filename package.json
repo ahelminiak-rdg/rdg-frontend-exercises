@@ -1,0 +1,15 @@
+{
+  "name": "rdg-frontend-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ahelminiak-rdg/rdg-frontend-exercises.git",
+  "author": "ahelminiak-rdg",
+  "license": "MIT",
+  "dependencies": {
+    "breakpoint-sass": "^3.0.0",
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  }
+}
