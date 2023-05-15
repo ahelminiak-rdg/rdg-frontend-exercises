@@ -4,7 +4,7 @@ Series of learning exercises that focus on teaching SASS, component based design
 ## Project Set Up
 1. Open your Terminal Application.
 2. Navigate to your Sites directory by typing in the command `cd Sites` and then hitting enter.
-3. Clone the project into your Sites directory by running `git clone https://github.com/ahelminiak-rdg/rdg-frontend-exercises.git`.
+3. Clone the project into your Sites directory by running `git clone https://github.com/ahelminiak-rdg/rdg-frontend-exercises.git`. You may get a prompt to install git command tools. Go ahead and install them at this time.
 4. Navigate to the project by running `cd rdg-frontend-exercises`.
 5. Create a new git branch named after yourself (first initial followed by your last name) for your work by running `git branch f_lastname`
 6. Install required modules by running `npm i`
