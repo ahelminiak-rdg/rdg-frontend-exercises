@@ -18,7 +18,8 @@ Once you've completed some work that you'd like to save, you can push your work 
 
 The first time that you try to push your code, you may see the following message:
 
-```There is no tracking information for the current branch.
+```
+There is no tracking information for the current branch.
 Please specify which branch you want to merge with.
 See git-pull(1) for details.
 
@@ -26,7 +27,8 @@ git pull <remote> <branch>
 
 If you wish to set tracking information for this branch you can do so with:
 
-git branch --set-upstream-to=<remote>/<branch> f_lastname```
+git branch --set-upstream-to=<remote>/<branch> f_lastname
+```
 
 If that happens, simply run the last command by copying and pasting it into your terminal and pressing enter.
 
