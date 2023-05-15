@@ -7,14 +7,18 @@ Series of learning exercises that focus on teaching SASS, component based design
 3. Clone the project into your Sites directory by running `git clone https://github.com/ahelminiak-rdg/rdg-frontend-exercises.git`. You may get a prompt to install git command tools. Go ahead and install them at this time.
 4. Navigate to the project by running `cd rdg-frontend-exercises`.
 5. Create a new git branch named after yourself (first initial followed by your last name) for your work by running `git branch f_lastname`
+6. Install homebrew with this command: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` (you may be asked to run a few more commands. Just follow the prompts and everything will be fine :D)
 6. Install required modules by running `npm i`
-7. Start sass by running `npm run sass`
+7. Start sass by running `npm run sass` (to stop running sass, press control+c)
 8. Get coding!
 
 ## Pushing your work
-Once you've completed some work that you'd like to save, you can push your work back out to github. To do this, simply run this command:
+Once you've completed some work that you'd like to save, you can push your work back out to github. To do this, simply run these commands:
+1. `git add .`
+2. `git commit -m 'add a message here about what you changed'`
+3. `git push`
 
-`git push`
+You may be asked to sign into github. Enter your username and password when prompted.
 
 The first time that you try to push your code, you may see the following message:
 
